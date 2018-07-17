@@ -1,7 +1,10 @@
 import React from 'react';
+import logo from '../../../assets/images/logo.png';
 import './Logo.css';
 
 export default () =>
     <aside className='logo'>
-        Logo
+        <a href="/" className='logo'>
+            <img src={logo} alt='logo' />
+        </a>
     </aside>;
