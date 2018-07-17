@@ -3,9 +3,9 @@ import './Main.css';
 
 import Header from '../Header/Header';
 
-export default () =>
+export default props =>
     <Fragment>
-        <Header />
+        <Header {...props} />
 
         <main className="content">
             Conteúdo
