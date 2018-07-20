@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './NavItens.css';
 
 export default ({ path, icon, title}) =>
-    <a href={`#/${path ? path : ''}`}>
+    <Link to={`/${path ? path : ''}`}>
         <i className={`fa fa-${icon}`} /> {title}
-    </a>;
+    </Link>;
